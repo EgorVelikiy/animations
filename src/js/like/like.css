@@ -1,0 +1,143 @@
+.third-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.like {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(219, 67, 67);
+    border-color: rgb(219, 67, 67);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.like:hover {
+    background-color: red;
+    border-radius: 10px;
+    border-color: red;
+    font-size: 18px;
+}
+
+.like-img {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 40px;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes like1 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    25% {
+        transform: translate(-50px, -50px);
+        opacity: 0.8;
+        /* влево */
+    } 
+    
+    50% {
+        transform: translate(0px, -100px);
+        opacity: 0.6;
+    } /* - центр,  */
+    
+    75% {
+        transform: translate(50px, -150px);
+        opacity: 0.4;
+        /* - вправо,  */
+    }
+    
+    100% {
+        transform: translate(0px, -200px);
+        opacity: 0.2;
+        /* центр */
+    } 
+}
+
+@keyframes like2 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    25% {
+        transform: translate(50px, -50px);
+        opacity: 0.8;
+    } 
+    
+    50% {
+        transform: translate(0px, -100px);
+        opacity: 0.6;
+    }
+    
+    75% {
+        transform: translate(-50px, -150px);
+        opacity: 0.4;
+    }
+    
+    100% {
+        transform: translate(0px, -200px);
+        opacity: 0.2;
+    } 
+}
+
+@keyframes like3 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    25% {
+        transform: translate(0px, -50px);
+        opacity: 0.8;
+    } 
+    
+    50% {
+        transform: translate(50px, -100px);
+        opacity: 0.6;
+    }
+    
+    75% {
+        transform: translate(0px, -150px);
+        opacity: 0.4;
+    }
+    
+    100% {
+        transform: translate(-50px, -200px);
+        opacity: 0.2;
+    } 
+}
+
+@keyframes like4 {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    
+    25% {
+        transform: translate(0px, -50px);
+        opacity: 0.8;
+    } 
+    
+    50% {
+        transform: translate(-50px, -100px);
+        opacity: 0.6;
+    }
+    
+    75% {
+        transform: translate(0px, -150px);
+        opacity: 0.4;
+    }
+    
+    100% {
+        transform: translate(50px, -200px);
+        opacity: 0.2;
+    } 
+}

@@ -1,0 +1,47 @@
+.first-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 25px;
+    background-color: #ffffff;
+    border: 3px solid rgb(82, 151, 197);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.collapse-container {
+    overflow: hidden;
+    transition: max-height 0.5s ease, border 2.5s;
+    width: 400px;
+    max-height: 0px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+.collapse-content {
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 24px;
+    transition: border 1s;
+}
+
+.active-content {
+    border: 3px solid rgb(82, 151, 197);
+    border-radius: 10px;
+    max-height: 300px;
+}
+
+.toggle-button {
+    background-color: #4e98dd;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.toggle-button:hover {
+    color: rgb(82, 48, 48);
+    border: 3px solid rgb(132, 195, 238);
+}
