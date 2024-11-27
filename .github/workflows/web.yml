@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 20.13.1
           cache: 'npm'
-      - run: npm
+      - run: npm install
       - run: npm run lint
 
   test:
@@ -40,8 +40,8 @@ jobs:
         with:
           node-version: 20.13.1
           cache: 'npm'
-      - run: npm
-      - run: yarn run test
+      - run: npm install
+      - run: npm run test
 
   build:
     needs: [eslint, test]
@@ -58,7 +58,7 @@ jobs:
         with:
           node-version: 20.13.1
           cache: 'npm'
-      - run: npm
+      - run: npm install
       - run: npm build
       - name: Setup Pages
         uses: actions/configure-pages@v4
